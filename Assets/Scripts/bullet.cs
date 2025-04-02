@@ -15,7 +15,7 @@ public class bullet : MonoBehaviour
     void Update()
     {
         Vector2 movement = direction.normalized * speed*Time.deltaTime;
-        //transform.position = new Vector2(transform.position.x + movement.x, transform.position.y + movement.y);
+        transform.position = new Vector2(transform.position.x + movement.x, transform.position.y + movement.y);
         //transform.Translate(movement);
 
         if (Input.GetKeyDown(KeyCode.Space))
